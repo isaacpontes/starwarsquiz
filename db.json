@@ -1,0 +1,45 @@
+{
+    "bg": "http://www.science.smith.edu/~nhowe/102/Assign/StarWars/stars.png",
+    "title": "Alura Quiz - STAR WARS EDITION",
+    "description": "Você conhece Star Wars? Certamente já deve ter no mínimo ouvido falar. Mas o quanto você conhece? Faça o teste e descubra!",
+    "questions": [
+      {
+        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "title": "Como fazer um seletor por id via CSS?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          ".elemento",
+          "*elemento",
+          "#elemento",
+          "%elemento"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Como fazer um background gradiente com css?",
+        "description": "Faz tempo em haha",
+        "answer": 0,
+        "alternatives": [
+           "background: linear-gradient(#e66465, #9198e5);",
+           "background: gradient(#e66465, #9198e5);"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#ffe919",
+        "secondary": "#2b9fff",
+        "light": "#eee",
+        "dark": "#111",
+        "wrong": "#ff0006",
+        "success": "#24c52a",
+        "black": "#000",
+        "white": "#fff"
+      },
+      "borderRadius": "8px"
+    }
+  }
