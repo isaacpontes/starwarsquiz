@@ -1,12 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
-    return theme.colors.dark;
-  }};
+  background-color: ${({ theme }) => theme.colors.dark};
   border-radius: ${({ theme }) => theme.borderRadius};
   overflow: hidden;
   h1, h2, h3 {
@@ -51,40 +49,43 @@ Widget.Content = styled.div`
 
 Widget.Input = styled.input`
   background-color: transparent;
-  border: 1px solid ${ ({ theme }) => theme.colors.primary };
-  border-radius: ${ ({theme}) => theme.borderRadius };
-  color: ${ ({ theme }) => theme.colors.light };
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  color: ${({ theme }) => theme.colors.light};
   display: relative;
   font-size: 16px;
   margin: .5em auto;
   padding: .75em 1em;
   width: 100%;
   &:focus {
-    /* box-shadow: 0px 0px 4px 1px ${ ({ theme }) => theme.colors.primary }; */
+    /* box-shadow: 0px 0px 4px 1px ${({ theme }) => theme.colors.primary}; */
     outline: none;
   }
 `;
 
-Widget.Button = styled.a`
-  background-color: ${ ({ theme }) => theme.colors.primary };
+Widget.Button = styled.button`
+  background-color: ${({ theme }) => theme.colors.primary};
   border: none;
-  border-radius: ${ ({theme}) => theme.borderRadius };
+  border-radius: ${({ theme }) => theme.borderRadius};
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .4);
-  color: ${ ({ theme }) => theme.colors.dark };
+  color: ${({ theme }) => theme.colors.dark};
   display: block;
+  font-size: 18px;
   font-weight: bold;
   margin: 1em 0;
-  padding: .75em 1em;
-  text-align: center;
-  text-decoration: none;
+  padding: .6em 1em;
   transition: all 200ms ease;
   width: 100%;
   &:focus {
     outline: none;
   }
   &:hover {
-    background-color: ${ ({ theme }) => theme.colors.light };
+    background-color: ${({ theme }) => theme.colors.secondary};
     box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, .8);
+  }
+  &:disabled {
+    background-color: ${({ theme }) => theme.colors.light};
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .8);
   }
 `;
 
