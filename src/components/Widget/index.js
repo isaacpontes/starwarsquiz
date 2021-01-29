@@ -4,7 +4,7 @@ const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => theme.colors.dark};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: ${({ theme }) => theme.borderRadius};
   overflow: hidden;
   h1, h2, h3 {
@@ -25,7 +25,7 @@ Widget.Header = styled.header`
   justify-content: flex-start;
   align-items: center;
   padding: 16px 28px;
-  color: ${({ theme }) => theme.colors.dark};
+  color: ${({ theme }) => theme.colors.mainBg};
   background-color: ${({ theme }) => theme.colors.primary};
   
   * {
@@ -47,11 +47,17 @@ Widget.Content = styled.div`
   }
 `;
 
+Widget.Image = styled.img`
+  height: 12em;
+  width: 100%;
+  object-fit: cover;
+`;
+
 Widget.Input = styled.input`
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   border-radius: ${({ theme }) => theme.borderRadius};
-  color: ${({ theme }) => theme.colors.light};
+  color: ${({ theme }) => theme.colors.contrastText};
   display: relative;
   font-size: 16px;
   margin: .5em auto;
@@ -63,12 +69,30 @@ Widget.Input = styled.input`
   }
 `;
 
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+`;
+
 Widget.Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
   border: none;
   border-radius: ${({ theme }) => theme.borderRadius};
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .4);
-  color: ${({ theme }) => theme.colors.dark};
+  color: ${({ theme }) => theme.colors.mainBg};
   display: block;
   font-size: 18px;
   font-weight: bold;
@@ -81,10 +105,11 @@ Widget.Button = styled.button`
   }
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.contrastText};
     box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, .8);
   }
   &:disabled {
-    background-color: ${({ theme }) => theme.colors.light};
+    background-color: ${({ theme }) => theme.colors.contrastText};
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .8);
   }
 `;

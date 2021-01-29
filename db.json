@@ -4,25 +4,135 @@
     "description": "Você conhece Star Wars? Certamente já deve ter no mínimo ouvido falar. Mas o quanto você conhece? Faça o teste e descubra!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://observatoriodeseries.uol.com.br/wp-content/uploads/2020/12/star-wars-3.jpg",
+        "title": "Qual é o nome do planeta em que Darth Vader construiu sua fortaleza?",
+        "description": "Essa é pra aquecer...",
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+           "Coruscant",
+           "Tatooine",
+           "Alderaan",
+           "Mustafar"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://medias.spotern.com/spots/w640/60/60648-1571236706.jpg",
+        "title": "Com quantos anos morreu o mestre Yoda?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "150 anos",
+           "800 anos",
+           "900 anos",
+           "300 anos"
+        ]
+      },
+      {
+        "image": "https://pm1.narvii.com/6618/9fde190108eddcc4928882416a365233092dbb94_00.jpg",
+        "title": "Como ficou conhecida a batalha onde o Império Galático sofreu sua primeira grande derrota contra a Aliança Rebelde?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "Batalha de Endor",
+           "Batalha de Scarif",
+           "Batalha de Hoth",
+           "Batalha de Yavin"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/564x/88/fc/5a/88fc5aa9346b40dd24079ee471d199a3.jpg",
+        "title": "Qual é o nome deste cavaleiro jedi?",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Plo Koon",
+          "Mace Windu",
+          "Even Piel",
+          "Yarael Poof"
+        ]
+      },
+      {
+        "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/emperor-palpatine-throne-room-star-wars-joseph-oland.jpg",
+        "title": "Por quantos anos Sheev Palpatine se manteve no poder como imperador?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "30 anos",
+           "23 anos",
+           "19 anos",
+           "34 anos"
+        ]
+      },
+      {
+        "image": "https://i.stack.imgur.com/lWo0f.jpg",
+        "title": "Quem foi o primeiro jedi a redescobrir o caminho para se tornar um fantasma da força?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "Yoda",
+           "Qui-Gon Jinn",
+           "Obi-Wan Kenobi",
+           "Anakin Skywalker"
+        ]
+      },
+      {
+        "image": "https://static.wikia.nocookie.net/starwars/images/5/5b/Imperial_center_ROTJ.jpg/revision/latest?cb=20120114004056",
+        "title": "Após a queda do Império Galático, quem foi eleito(a) o(a) primeiro(a) Chanceler da Nova República?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "Mon Mothma",
+           "Luke Skywalker",
+           "Leia Organa",
+           "Gial Ackbar"
+        ]
+      },
+      {
+        "image": "https://thecreativitystorm.files.wordpress.com/2018/09/shaak-bio-1_52b57b85-e1537820182215.jpeg?w=553",
+        "title": "Qual é o nome desta personagem?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "Aayla Secura",
+           "Luminara Unduli",
+           "Ashoka Tano",
+           "Shaak Ti"
+        ]
+      },
+      {
+        "image": "https://static.wikia.nocookie.net/starwars/images/e/e7/Sidious_and_Vader_on_Ryloth.png/revision/latest/scale-to-width-down/1000?cb=20160217234646",
+        "title": "Qual foi o lorde sith que criou a filosofia da 'Regra dos Dois' ('Rule of Two')?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "Darth Plagueis",
+           "Darth Bane",
+           "Darth Sidious",
+           "Darth Revan"
+        ]
+      },
+      {
+        "image": "https://static.wikia.nocookie.net/starwars/images/8/8d/Sundari_royal_palace.jpeg/revision/latest?cb=20160210081928",
+        "title": "Qual era o nome da duquesa de Mandalore no período das Guerras Clônicas?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "Padmé Amidala",
+           "Mina Bonteri",
+           "Satine Kryze",
+           "Mon Mothma"
+        ]
+      },
+      {
+        "image": "https://fastly.syfy.com/sites/syfy/files/styles/1200x680/public/syfywire_cover_media/2018/09/64e915bb-6ed8-406d-9994-ea5efae6558b-han-solo-return-of-the-jedi-shrug.jpg?offset-x=0&offset-y=0",
+        "title": "Quem atirou primeiro?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "Han Solo",
+           "Greedo",
+           "Ambos atiraram ao mesmo tempo",
+           "Não entendi a pergunta"
         ]
       }
     ],
@@ -33,12 +143,10 @@
       "colors": {
         "primary": "#ffe919",
         "secondary": "#2b9fff",
-        "light": "#eee",
-        "dark": "#111",
+        "mainBg": "#111",
+        "contrastText": "#eee",
         "wrong": "#ff0006",
-        "success": "#24c52a",
-        "black": "#000",
-        "white": "#fff"
+        "success": "#24c52a"
       },
       "borderRadius": "8px"
     }
