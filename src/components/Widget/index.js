@@ -77,13 +77,14 @@ Widget.Topic = styled.a`
   padding: 10px 15px;
   margin-bottom: 8px;
   cursor: pointer;
+  border: solid 2px  ${({ theme }) => `${theme.colors.mainBg}`};;
   border-radius: ${({ theme }) => theme.borderRadius};
   transition: .3s;
   display: block;
   
   &:hover,
   &:focus {
-    opacity: .5;
+    border: solid 2px ${({ theme }) => `${theme.colors.primary}`};
   }
 `;
 
@@ -93,12 +94,13 @@ Widget.Button = styled.button`
   border-radius: ${({ theme }) => theme.borderRadius};
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .4);
   color: ${({ theme }) => theme.colors.mainBg};
+  cursor: pointer;
   display: block;
   font-size: 18px;
   font-weight: bold;
   margin: 1em 0;
   padding: .6em 1em;
-  transition: all 200ms ease;
+  transition: .4s;
   width: 100%;
   &:focus {
     outline: none;
@@ -106,10 +108,11 @@ Widget.Button = styled.button`
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.contrastText};
-    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, .8);
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .8);
   }
   &:disabled {
-    background-color: ${({ theme }) => theme.colors.contrastText};
+    background-color: #aaa;
+    color: ${({ theme }) => theme.colors.contrastText};
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .8);
   }
 `;

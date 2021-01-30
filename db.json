@@ -1,7 +1,7 @@
 {
     "bg": "http://www.science.smith.edu/~nhowe/102/Assign/StarWars/stars.png",
     "title": "Alura Quiz - STAR WARS EDITION",
-    "description": "Você conhece Star Wars? Certamente já deve ter no mínimo ouvido falar. Mas o quanto você conhece? Faça o teste e descubra!",
+    "description": "O quanto você conhece Star Wars? Faça o teste e descubra!",
     "questions": [
       {
         "image": "https://observatoriodeseries.uol.com.br/wp-content/uploads/2020/12/star-wars-3.jpg",
@@ -137,7 +137,9 @@
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-base.alura-challenges.vercel.app/",
+      "https://aluraquiz-css.omariosouto.vercel.app/",
+      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {

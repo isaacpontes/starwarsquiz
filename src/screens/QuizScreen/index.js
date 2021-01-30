@@ -2,25 +2,49 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizLogo from '../src/components/QuizLogo';
-import Widget from '../src/components/Widget';
-import db from '../db.json';
-import AlternativesForm from '../src/components/AlternativesForm';
-import QuizContainer from '../src/components/QuizContainer';
-import GitHubCorner from '../src/components/GitHubCorner';
+import { motion } from 'framer-motion';
+import Lottie from 'react-lottie';
+import animationData from './animations/loading.json';
+import QuizBackground from '../../components/QuizBackground';
+import QuizLogo from '../../components/QuizLogo';
+import Widget from '../../components/Widget';
+import AlternativesForm from '../../components/AlternativesForm';
+import QuizContainer from '../../components/QuizContainer';
+import GitHubCorner from '../../components/GitHubCorner';
 
-const LoadingWidget = () => (
-  <Widget>
-    <Widget.Header>
-      Carregando...
-    </Widget.Header>
+const LoadingWidget = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+  };
 
-    <Widget.Content>
-      [Desafio do Loading]
-    </Widget.Content>
-  </Widget>
-);
+  return (
+    <Widget
+      as={motion.section}
+      transition={{ delay: 0.4, duration: 0.3 }}
+      variants={{
+        show: { opacity: 1, y: '0' },
+        hidden: { opacity: 0, y: '100%' },
+      }}
+      initial="hidden"
+      animate="show"
+    >
+      <Widget.Header>
+        Carregando...
+      </Widget.Header>
+
+      <Widget.Content>
+        <Lottie
+          options={defaultOptions}
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+        />
+      </Widget.Content>
+    </Widget>
+  );
+};
 
 const ResultsWidget = ({ results }) => (
   <Widget>
@@ -59,10 +83,18 @@ const QuestionWidget = ({
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h1>
       </Widget.Header>
+
       <Widget.Image src={question.image} alt="Question Cover" />
+
       <Widget.Content>
-        <h1>{question.title}</h1>
-        <p>{question.description}</p>
+        <h1>
+          {question.title}
+        </h1>
+
+        <p>
+          {question.description}
+        </p>
+
         <AlternativesForm
           onSubmit={(event) => {
             event.preventDefault();
@@ -79,6 +111,7 @@ const QuestionWidget = ({
             const alternativeId = `alternative__${alternativeIndex}`;
             const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
             const isSelected = selectedAlternative === alternativeIndex;
+
             return (
               <Widget.Topic
                 as="label"
@@ -92,17 +125,17 @@ const QuestionWidget = ({
                   name={questionId}
                   type="radio"
                   onChange={() => setSelectedAlternative(alternativeIndex)}
+                  checked={isSelected}
                   style={{ display: 'none' }}
                 />
                 {alternative}
               </Widget.Topic>
             );
           })}
+
           <Widget.Button type="submit" disabled={!hasSelectedAlternative}>
             Confirmar
           </Widget.Button>
-          {isQuestionSubmited && isCorrect && <p>CORRETO!</p>}
-          {isQuestionSubmited && !isCorrect && <p>INCORRETO!</p>}
         </AlternativesForm>
       </Widget.Content>
     </Widget>
@@ -115,20 +148,20 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-export default function QuizPage() {
+export default function QuizScreen({ database }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const [results, setResults] = React.useState([]);
-  const totalQuestions = db.questions.length;
+  const totalQuestions = database.questions.length;
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
+  const question = database.questions[questionIndex];
 
   const addResult = (result) => { setResults([...results, result]); };
 
   React.useEffect(() => {
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1000);
+    }, 2 * 1000);
   }, []);
 
   const handleQuizSubmit = () => {
@@ -141,7 +174,7 @@ export default function QuizPage() {
   };
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={database.bg}>
       <Head>
         <title>Alura Quiz - Pergunta 1</title>
       </Head>
