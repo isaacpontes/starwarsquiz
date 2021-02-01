@@ -13,6 +13,7 @@ import GitHubCorner from '../src/components/GitHubCorner';
 export default function Home() {
   const router = useRouter();
   const [name, setName] = useState('');
+  const [level, setLevel] = useState('');
 
   return (
     <QuizBackground backgroundImage={db.bg}>
@@ -40,17 +41,27 @@ export default function Home() {
             <p>{db.description}</p>
             <form onSubmit={(event) => {
               event.preventDefault();
-              setName('Isaac');
-              router.push(`/quiz?name=${name}`);
+              router.push(`/quiz?name=${name}&level=${level}`);
             }}
             >
               <Widget.Input
+                id="name"
                 placeholder="Me diz aí seu nome :)"
                 onChange={(event) => {
+                  document.getElementById('name').style.borderColor = db.theme.colors.primary;
                   setName(event.target.value);
                 }}
               />
-              <Widget.Button type="submit" disabled={name.length === 0}>
+              <Widget.Select
+                id="level"
+                onChange={(event) => setLevel(event.target.value)}
+              >
+                <option value="">Em qual nível quer jogar?</option>
+                <option value="0">Padawan</option>
+                <option value="1">Cavaleiro Jedi</option>
+                <option value="2">Mestre Jedi</option>
+              </Widget.Select>
+              <Widget.Button type="submit" disabled={name.length === 0 || level === ''}>
                 Jogar
               </Widget.Button>
             </form>
@@ -81,7 +92,17 @@ export default function Home() {
                 return (
                   <li key={externalLink}>
                     <Widget.Topic
-                      href={`/quiz/${projectName}___${githubUser}`}
+                      href={`/quiz/${projectName}___${githubUser}?name=${name}`}
+                      onClick={(event) => {
+                        if (name === '') {
+                          event.preventDefault();
+                          const nameInput = document.getElementById('name');
+                          nameInput.placeholder = 'Diz aí seu nome, por favor :)';
+                          nameInput.style.borderColor = db.theme.colors.wrong;
+                          window.scrollTo(0, 0);
+                          document.getElementById('name').focus();
+                        }
+                      }}
                     >
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>

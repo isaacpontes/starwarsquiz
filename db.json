@@ -2,149 +2,288 @@
     "bg": "http://www.science.smith.edu/~nhowe/102/Assign/StarWars/stars.png",
     "title": "Alura Quiz - STAR WARS EDITION",
     "description": "O quanto você conhece Star Wars? Faça o teste e descubra!",
-    "questions": [
-      {
-        "image": "https://observatoriodeseries.uol.com.br/wp-content/uploads/2020/12/star-wars-3.jpg",
-        "title": "Qual é o nome do planeta em que Darth Vader construiu sua fortaleza?",
-        "description": "Essa é pra aquecer...",
-        "answer": 3,
-        "alternatives": [
-           "Coruscant",
-           "Tatooine",
-           "Alderaan",
-           "Mustafar"
-        ]
-      },
-      {
-        "image": "https://medias.spotern.com/spots/w640/60/60648-1571236706.jpg",
-        "title": "Com quantos anos morreu o mestre Yoda?",
-        "description": "",
-        "answer": 2,
-        "alternatives": [
-           "150 anos",
-           "800 anos",
-           "900 anos",
-           "300 anos"
-        ]
-      },
-      {
+    "questions":[
+      [
+        {
+          "image": "https://media.giphy.com/media/5wikad3qSOqAg/giphy.gif",
+          "title": "Quantos filmes live-action de Star Wars existem?",
+          "description": "Não, o Holiday Special não conta :v",
+          "answer": 2,
+          "alternatives": [
+             "9",
+             "10",
+             "11",
+             "12"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/kyWH22kp3U9Dq/giphy.gif",
+          "title": "Quem foi o líder do esquadrão vermelho na Batalha de Yavin?",
+          "description": "Ele era um piloto e tanto",
+          "answer": 1,
+          "alternatives": [
+             "Luke Skywalker",
+             "Wedge Antilles",
+             "Gial Ackbar",
+             "Lando Calrissian"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/eX4DUpqQealzy/giphy.gif",
+          "title": "O que acontece com Han Solo ao fim de O Império Contra-Ataca?",
+          "description": "Vamos lá, é mais fácil do que parece",
+          "answer": 3,
+          "alternatives": [
+             "É capturado pelo império e feito prisioneiro",
+             "É morto por seu filho Ben Solo",
+             "Decide se aliar à Aliança Rebelde mesmo depois de ter se recusado",
+             "É congelado em carbonita e levado por Boba Fett"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/u9RsL8pleIAlW/giphy.gif",
+          "title": "Qual o nome da base utilizada pela Primeira Ordem em O Desperta da Força?",
+          "description": "Essa tá de graça, hein",
+          "answer": 3,
+          "alternatives": [
+             "Star Destroyer",
+             "Death Star",
+             "Supremacy",
+             "Starkiller"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/1lznA4FFhnyJiUYIip/giphy.gif",
+          "title": "Como as Guerras Clônicas chegaram ao fim?",
+          "description": "Seria uma pegadinha?",
+          "answer": 2,
+          "alternatives": [
+             "A Repúplica foi derrotada e Palpatine se revelou o líder dos Separatistas",
+             "Os Separatistas se renderam após a morte de seu líder, o conde Dookan",
+             "Após Obi-Wan destruir o General Grievous, Darth Vader matou os líderes separatistas restantes, dando um fim à guerra",
+             "Após inúmeras negociações, foi feito um tratado de paz entre a República e os Separatistas"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/l3diDDBbh34H93sB2/giphy.gif",
+          "title": "Qual é o nome do aprendiz de Darth Sidious durante A Ameaça Fantasma",
+          "description": "Ele tinha um visual bem marcante",
+          "answer": 0,
+          "alternatives": [
+             "Darth Maul",
+             "Darth Vader",
+             "Darth Tyranus",
+             "Darth Plagueis"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/3ohuABdLfHrvt1289i/giphy.gif",
+          "title": "Qual é o nome desta personagem?",
+          "description": "Como assim você não assistiu The Clone Wars? Vá lá fazer isso agora!",
+          "answer": 1,
+          "alternatives": [
+             "Adi Galia",
+             "Ahsoka Tano",
+             "Shaak Ti",
+             "Jyn Erso"
+          ]
+        },
+        {
+          "image": "https://list.lisimg.com/image/4937202/500full.jpg",
+          "title": "Qual foi o ano de lançamento do primeiro filme de Star Wars?",
+          "description": "Diz aí, você assistiu no cinema?",
+          "answer": 0,
+          "alternatives": [
+             "1977",
+             "1975",
+             "1980",
+             "1999"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/3ofSB6mJa8DGnfmv0A/giphy.gif",
+          "title": "Qual destes personagens aparece em todos os filmes principais da saga?",
+          "description": "Vamos lá, já está quase terminando",
+          "answer": 2,
+          "alternatives": [
+             "Luke Skywalker",
+             "Mestre Yoda",
+             "R2-D2",
+             "Darth Sidious"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/26mfgpNiKHawv3wDS/giphy.gif",
+          "title": "Com quantos anos morreu o mestre Yoda?",
+          "description": "R.I.P :(",
+          "answer": 2,
+          "alternatives": [
+             "150 anos",
+             "800 anos",
+             "900 anos",
+             "300 anos"
+          ]
+        }
+      ],
+
+      [
+        {
+          "image": "https://static.tumblr.com/ed18c465fa31702a22afa9df7b2d7407/ub8jh7w/JxLojc593/tumblr_static_7089wnbo8e80w00o800gkks04.gif",
+          "title": "Qual é o nome do planeta em que Darth Vader construiu sua fortaleza?",
+          "description": "Essa é pra aquecer",
+          "answer": 3,
+          "alternatives": [
+             "Coruscant",
+             "Tatooine",
+             "Alderaan",
+             "Mustafar"
+          ]
+        },
+        {
         "image": "https://pm1.narvii.com/6618/9fde190108eddcc4928882416a365233092dbb94_00.jpg",
         "title": "Como ficou conhecida a batalha onde o Império Galático sofreu sua primeira grande derrota contra a Aliança Rebelde?",
-        "description": "",
-        "answer": 3,
-        "alternatives": [
-           "Batalha de Endor",
-           "Batalha de Scarif",
-           "Batalha de Hoth",
-           "Batalha de Yavin"
-        ]
-      },
-      {
-        "image": "https://i.pinimg.com/564x/88/fc/5a/88fc5aa9346b40dd24079ee471d199a3.jpg",
-        "title": "Qual é o nome deste cavaleiro jedi?",
-        "description": "",
-        "answer": 0,
-        "alternatives": [
-          "Plo Koon",
-          "Mace Windu",
-          "Even Piel",
-          "Yarael Poof"
-        ]
-      },
-      {
-        "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/emperor-palpatine-throne-room-star-wars-joseph-oland.jpg",
-        "title": "Por quantos anos Sheev Palpatine se manteve no poder como imperador?",
-        "description": "",
-        "answer": 1,
-        "alternatives": [
-           "30 anos",
-           "23 anos",
-           "19 anos",
-           "34 anos"
-        ]
-      },
-      {
-        "image": "https://i.stack.imgur.com/lWo0f.jpg",
-        "title": "Quem foi o primeiro jedi a redescobrir o caminho para se tornar um fantasma da força?",
-        "description": "",
-        "answer": 1,
-        "alternatives": [
-           "Yoda",
-           "Qui-Gon Jinn",
-           "Obi-Wan Kenobi",
-           "Anakin Skywalker"
-        ]
-      },
-      {
-        "image": "https://static.wikia.nocookie.net/starwars/images/5/5b/Imperial_center_ROTJ.jpg/revision/latest?cb=20120114004056",
-        "title": "Após a queda do Império Galático, quem foi eleito(a) o(a) primeiro(a) Chanceler da Nova República?",
-        "description": "",
-        "answer": 0,
-        "alternatives": [
-           "Mon Mothma",
-           "Luke Skywalker",
-           "Leia Organa",
-           "Gial Ackbar"
-        ]
-      },
-      {
-        "image": "https://thecreativitystorm.files.wordpress.com/2018/09/shaak-bio-1_52b57b85-e1537820182215.jpeg?w=553",
-        "title": "Qual é o nome desta personagem?",
-        "description": "",
-        "answer": 3,
-        "alternatives": [
-           "Aayla Secura",
-           "Luminara Unduli",
-           "Ashoka Tano",
-           "Shaak Ti"
-        ]
-      },
-      {
-        "image": "https://static.wikia.nocookie.net/starwars/images/e/e7/Sidious_and_Vader_on_Ryloth.png/revision/latest/scale-to-width-down/1000?cb=20160217234646",
-        "title": "Qual foi o lorde sith que criou a filosofia da 'Regra dos Dois' ('Rule of Two')?",
-        "description": "",
-        "answer": 1,
-        "alternatives": [
-           "Darth Plagueis",
-           "Darth Bane",
-           "Darth Sidious",
-           "Darth Revan"
-        ]
-      },
-      {
-        "image": "https://static.wikia.nocookie.net/starwars/images/8/8d/Sundari_royal_palace.jpeg/revision/latest?cb=20160210081928",
-        "title": "Qual era o nome da duquesa de Mandalore no período das Guerras Clônicas?",
-        "description": "",
-        "answer": 2,
-        "alternatives": [
-           "Padmé Amidala",
-           "Mina Bonteri",
-           "Satine Kryze",
-           "Mon Mothma"
-        ]
-      },
-      {
-        "image": "https://fastly.syfy.com/sites/syfy/files/styles/1200x680/public/syfywire_cover_media/2018/09/64e915bb-6ed8-406d-9994-ea5efae6558b-han-solo-return-of-the-jedi-shrug.jpg?offset-x=0&offset-y=0",
-        "title": "Quem atirou primeiro?",
-        "description": "",
-        "answer": 0,
-        "alternatives": [
-           "Han Solo",
-           "Greedo",
-           "Ambos atiraram ao mesmo tempo",
-           "Não entendi a pergunta"
-        ]
-      }
+          "description": "Ah, essa tá de graça",
+          "answer": 3,
+          "alternatives": [
+             "Batalha de Endor",
+             "Batalha de Scarif",
+             "Batalha de Hoth",
+             "Batalha de Yavin"
+          ]
+        },
+        {
+          "image": "https://lumiere-a.akamaihd.net/v1/images/databank_kitfisto_01_169_21517d01.jpeg",
+          "title": "Qual é o nome deste cavaleiro jedi?",
+          "description": "",
+          "answer": 0,
+          "alternatives": [
+            "Kit Fisto",
+            "Even Piell",
+            "Ki-Adi-Mundi",
+            "Yarael Poof"
+          ]
+        },
+        {
+          "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/emperor-palpatine-throne-room-star-wars-joseph-oland.jpg",
+          "title": "Por quantos anos Sheev Palpatine se manteve no poder como imperador?",
+          "description": "Ah, bons tempos... Alderaan que o diga :v",
+          "answer": 1,
+          "alternatives": [
+             "30 anos",
+             "23 anos",
+             "19 anos",
+             "34 anos"
+          ]
+        },
+        {
+          "image": "https://i.stack.imgur.com/lWo0f.jpg",
+          "title": "Quem foi o primeiro jedi a redescobrir o caminho para se tornar um fantasma da força?",
+          "description": "",
+          "answer": 1,
+          "alternatives": [
+             "Yoda",
+             "Qui-Gon Jinn",
+             "Obi-Wan Kenobi",
+             "Anakin Skywalker"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/4Z7enO96BNCqIwT6fx/giphy.gif",
+          "title": "Após a queda do Império Galático, quem foi eleito(a) o(a) primeiro(a) Chanceler da Nova República?",
+          "description": "Eis que a democracia ressurge",
+          "answer": 0,
+          "alternatives": [
+             "Mon Mothma",
+             "Luke Skywalker",
+             "Leia Organa",
+             "Gial Ackbar"
+          ]
+        },
+        {
+          "image": "https://static.wikia.nocookie.net/starwars/images/e/e7/Sidious_and_Vader_on_Ryloth.png",
+          "title": "Qual foi o lorde sith que criou a filosofia da 'Regra dos Dois' ('Rule of Two')?",
+          "description": "Será que essa foi mesmo uma boa ideia?",
+          "answer": 1,
+          "alternatives": [
+             "Darth Plagueis",
+             "Darth Bane",
+             "Darth Sidious",
+             "Darth Revan"
+          ]
+        },
+        {
+          "image": "https://static.wikia.nocookie.net/starwars/images/8/8d/Sundari_royal_palace.jpeg",
+          "title": "Qual era o nome da duquesa de Mandalore no período das Guerras Clônicas?",
+          "description": "",
+          "answer": 2,
+          "alternatives": [
+             "Bo-Katan Kryze",
+             "Mina Bonteri",
+             "Satine Kryze",
+             "Mon Mothma"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/4kL3Q4lIggnGU/giphy.gif",
+          "title": "Como foi que Han Solo e Chewbacca conseguiram a nave Millenium Falcon?",
+          "description": "Pra finalizar, uma bem fácil",
+          "answer": 1,
+          "alternatives": [
+             "Eles a compraram para usar para contrabando",
+             "Han Solo ganhou-a em um jogo de sabacc",
+             "Eles a roubaram de um grupo de corellianos",
+             "Han Solo a herdou de Tobias Becket"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/3ornjSL2sBcPflIDiU/giphy.gif",
+          "title": "Quem atirou primeiro?",
+          "description": "Se você não sabe essa, eu nem sei o que te dizer...",
+          "answer": 0,
+          "alternatives": [
+             "Han Solo",
+             "Greedo",
+             "Ambos atiraram ao mesmo tempo",
+             "Não entendi a pergunta"
+          ]
+        }
+      ],
+      [
+        {
+          "image": "https://media.giphy.com/media/3ohuAk62O3R9V9kQeY/giphy.gif",
+          "title": "Qual é o nome desta personagem?",
+          "description": "",
+          "answer": 3,
+          "alternatives": [
+             "Aayla Secura",
+             "Adi Galia",
+             "Shaak Ti",
+             "Luminara Unduli"
+          ]
+        },
+        {
+          "image": "https://media.giphy.com/media/xT1XGWbE0XiBDX2T8Q/giphy.gif",
+          "title": "Oops, parece que eu ainda não terminei esse aqui :(",
+          "description": "Sorry about that...",
+          "answer": 0,
+          "alternatives": [
+             "Está tudo bem :)",
+             "Que vacilo, cara...",
+             "Eu não ia saber responder mesmo :v",
+             "Então trate de terminar logo"
+          ]
+        }
+      ]
     ],
     "external": [
-      "https://aluraquiz-base.alura-challenges.vercel.app/",
-      "https://aluraquiz-css.omariosouto.vercel.app/",
-      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
+      "https://quiz-justiceleague.levi-magny.vercel.app/",
+      "https://tibiaquiz-base.lubrum.vercel.app/",
+      "https://lotr-quiz.filipe1309.vercel.app/"
     ],
     "theme": {
       "colors": {
-        "primary": "#ffe919",
-        "secondary": "#2b9fff",
+        "primary": "#ffcc00",
+        "secondary": "#000",
         "mainBg": "#111",
         "contrastText": "#eee",
         "wrong": "#ff0006",

@@ -25,7 +25,7 @@ Widget.Header = styled.header`
   justify-content: flex-start;
   align-items: center;
   padding: 16px 28px;
-  color: ${({ theme }) => theme.colors.mainBg};
+  color: ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.primary};
   
   * {
@@ -69,6 +69,26 @@ Widget.Input = styled.input`
   }
 `;
 
+Widget.Select = styled.select`
+  background-color: transparent;
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  color: ${({ theme }) => theme.colors.contrastText};
+  display: relative;
+  font-size: 16px;
+  margin: .5em auto;
+  padding: .75em 1em;
+  width: 100%;
+  &:focus {
+    /* box-shadow: 0px 0px 4px 1px ${({ theme }) => theme.colors.primary}; */
+    outline: none;
+  }
+  & * {
+    background-color: ${({ theme }) => theme.colors.mainBg};
+    color: ${({ theme }) => theme.colors.contrastText};
+  }
+`;
+
 Widget.Topic = styled.a`
   outline: 0;
   text-decoration: none;
@@ -90,7 +110,7 @@ Widget.Topic = styled.a`
 
 Widget.Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primary};
-  border: none;
+  border: solid 2px ${({ theme }) => theme.colors.primary};
   border-radius: ${({ theme }) => theme.borderRadius};
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .4);
   color: ${({ theme }) => theme.colors.mainBg};
@@ -100,6 +120,8 @@ Widget.Button = styled.button`
   font-weight: bold;
   margin: 1em 0;
   padding: .6em 1em;
+  text-align: center;
+  text-decoration: none;
   transition: .4s;
   width: 100%;
   &:focus {
@@ -112,6 +134,7 @@ Widget.Button = styled.button`
   }
   &:disabled {
     background-color: #aaa;
+    border: solid 2px #aaa;
     color: ${({ theme }) => theme.colors.contrastText};
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .8);
   }
